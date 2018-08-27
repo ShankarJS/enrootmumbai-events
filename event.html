@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+	<head>
+		<title>Events</title>
+		<style>
+			#upcoming{
+				background-color: green;
+			}
+			#past{
+				background-color: red;
+			}
+			.event{
+				border: 2px solid yellow;
+				padding:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="upcoming">
+			<div style="border:2px solid yellow">
+				<h2 align="center">Upcoming Events</h2>
+			</div><br />
+			<div class="event">
+				<h3>Event 1<h3>
+				<p> Date: 23/08/2018 </p> 
+				<p> Time: 10:00am to 2:00pm </p>
+				<p> 3rd Floor, Conference hall </p>
+			</div><br />
+			<div class="event">
+				<h3>Event 2<h3>
+				<p> Date: 24/08/2018 </p> 
+				<p> Time: 10:00am to 2:00pm </p>
+				<p> 5th Floor, Conference hall </p>
+			</div><br />
+			<div class="event">
+				<h3>Event 3<h3>
+				<p> Date: 25/08/2018 </p> 
+				<p> Time: 12:00am to 3:00pm </p>
+				<p> 5th Floor, Assembly hall </p>
+			</div><br />
+		</div>
+		
+		<div id="past">
+			<div style="border:2px solid yellow">
+				<h2 align="center">Past Events</h2>
+			</div><br />
+			<div class="event">
+				<h3>Event 1<h3>
+				<p> Date: 20/08/2018 </p> 
+				<p> Time: 10:00am to 2:00pm </p>
+				<p> 3rd Floor, Conference hall </p>
+			</div><br />
+			<div class="event">
+				<h3>Event 2<h3>
+				<p> Date: 17/08/2018 </p> 
+				<p> Time: 10:00am to 2:00pm </p>
+				<p> 5th Floor, Conference hall </p>
+			</div><br />
+			<div class="event">
+				<h3>Event 3<h3>
+				<p> Date: 15/08/2018 </p> 
+				<p> Time: 12:00am to 3:00pm </p>
+				<p> 5th Floor, Assembly hall </p>
+			</div><br />
+		</div>
+		<br />
+		<div style="background-color:green">
+		<form method="POST" action="signup_success.html">
+			
+				<h4 align="center">Register here to start attending the events</h4>
+				<hr>
+
+				<label for="email"><b>Email:</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required><br /><br />
+				<label for="psw"><b>Password:</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required><br /><br />
+
+				<label for="psw-repeat"><b>Repeat Password:</b></label>
+				<input type="password" placeholder="Repeat Password" name="psw-repeat" required><br /><br />
+				<hr>
+				<button type="submit">Register</button>
+
+				<h4 align="center"> Already Registered? <a href="signin.html">Sign in</a>.</h4>
+		</form>
+		</div>
+		
+	</body>
+</html>
